@@ -1,0 +1,11 @@
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\bin\Debug\PruebaDesarrolladorNet.Business.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\bin\Debug\PruebaDesarrolladorNet.Business.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\bin\Debug\PruebaDesarrolladorNet.DataAccess.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\bin\Debug\PruebaDesarrolladorNet.DataAccess.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\bin\Debug\PruebaDesarrolladorNet.DataAccess.dll.config
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\obj\Debug\PruebaDesarrolladorNet.Business.csprojAssemblyReference.cache
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\obj\Debug\PruebaDesarrolladorNet.Business.csproj.CoreCompileInputs.cache
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\obj\Debug\PruebaDesarrolladorNet.Business.csproj.CopyComplete
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\obj\Debug\PruebaDesarrolladorNet.Business.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\obj\Debug\PruebaDesarrolladorNet.Business.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.Business\bin\Debug\AutoMapper.dll

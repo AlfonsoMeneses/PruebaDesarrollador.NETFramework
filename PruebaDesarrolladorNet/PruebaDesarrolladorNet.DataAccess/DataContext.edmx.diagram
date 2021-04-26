@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dc740e92a2cf437f96dad30cae383be2" Name="Diagram1">
+        <EntityTypeShape EntityType="PruebaTecnicaNetModel.Countries" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PruebaTecnicaNetModel.States" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PruebaTecnicaNetModel.Towns" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PruebaTecnicaNetModel.Users" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PruebaTecnicaNetModel.WeatherReports" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="PruebaTecnicaNetModel.FK_States_Country_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="PruebaTecnicaNetModel.FK_Towns_State_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="PruebaTecnicaNetModel.FK_WeatherReports_Towns_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="PruebaTecnicaNetModel.FK_WeatherReports_User_Id" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

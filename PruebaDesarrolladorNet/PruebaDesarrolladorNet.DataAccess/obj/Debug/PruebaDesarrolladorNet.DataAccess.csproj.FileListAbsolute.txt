@@ -1,0 +1,7 @@
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.DataAccess\bin\Debug\PruebaDesarrolladorNet.DataAccess.dll.config
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.DataAccess\bin\Debug\PruebaDesarrolladorNet.DataAccess.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.DataAccess\bin\Debug\PruebaDesarrolladorNet.DataAccess.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.DataAccess\obj\Debug\PruebaDesarrolladorNet.DataAccess.csprojAssemblyReference.cache
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.DataAccess\obj\Debug\PruebaDesarrolladorNet.DataAccess.csproj.CoreCompileInputs.cache
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.DataAccess\obj\Debug\PruebaDesarrolladorNet.DataAccess.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.DataAccess\obj\Debug\PruebaDesarrolladorNet.DataAccess.pdb

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PruebaTecnicaNetModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="country_id" />
+    </Key>
+    <Property Name="country_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="5" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="active" Type="smallint" />
+  </EntityType>
+  <EntityType Name="States">
+    <Key>
+      <PropertyRef Name="state_id" />
+    </Key>
+    <Property Name="state_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="5" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="active" Type="smallint" Nullable="false" />
+    <Property Name="country_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Towns">
+    <Key>
+      <PropertyRef Name="town_id" />
+    </Key>
+    <Property Name="town_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="active" Type="smallint" />
+    <Property Name="state_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="last_name" Type="varchar" MaxLength="50" />
+    <Property Name="user_name" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="250" />
+    <Property Name="active" Type="smallint" Nullable="false" />
+    <Property Name="last_login_date" Type="datetimeoffset" Precision="0" />
+    <Property Name="token" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="WeatherReports">
+    <Key>
+      <PropertyRef Name="reports_id" />
+    </Key>
+    <Property Name="reports_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="temperature" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="precipitation" Type="smallint" Nullable="false" />
+    <Property Name="humidity" Type="smallint" Nullable="false" />
+    <Property Name="conditions" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="town_id" Type="int" Nullable="false" />
+    <Property Name="report_date" Type="datetime" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="created_at" Type="datetime" Nullable="false" />
+    <Property Name="updated_at" Type="datetime" Nullable="false" />
+    <Property Name="active" Type="smallint" />
+  </EntityType>
+  <Association Name="FK_States_Country_Id">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="States" Type="Self.States" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="country_id" />
+      </Principal>
+      <Dependent Role="States">
+        <PropertyRef Name="country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Towns_State_Id">
+    <End Role="States" Type="Self.States" Multiplicity="0..1" />
+    <End Role="Towns" Type="Self.Towns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="States">
+        <PropertyRef Name="state_id" />
+      </Principal>
+      <Dependent Role="Towns">
+        <PropertyRef Name="state_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WeatherReports_Towns_ID">
+    <End Role="Towns" Type="Self.Towns" Multiplicity="1" />
+    <End Role="WeatherReports" Type="Self.WeatherReports" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Towns">
+        <PropertyRef Name="town_id" />
+      </Principal>
+      <Dependent Role="WeatherReports">
+        <PropertyRef Name="town_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WeatherReports_User_Id">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="WeatherReports" Type="Self.WeatherReports" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="WeatherReports">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PruebaTecnicaNetModelStoreContainer">
+    <EntitySet Name="Countries" EntityType="Self.Countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="States" EntityType="Self.States" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Towns" EntityType="Self.Towns" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WeatherReports" EntityType="Self.WeatherReports" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_States_Country_Id" Association="Self.FK_States_Country_Id">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="States" EntitySet="States" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Towns_State_Id" Association="Self.FK_Towns_State_Id">
+      <End Role="States" EntitySet="States" />
+      <End Role="Towns" EntitySet="Towns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WeatherReports_Towns_ID" Association="Self.FK_WeatherReports_Towns_ID">
+      <End Role="Towns" EntitySet="Towns" />
+      <End Role="WeatherReports" EntitySet="WeatherReports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WeatherReports_User_Id" Association="Self.FK_WeatherReports_User_Id">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="WeatherReports" EntitySet="WeatherReports" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

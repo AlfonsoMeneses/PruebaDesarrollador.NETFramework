@@ -1,0 +1,7 @@
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.WebApp\bin\PruebaDesarrolladorNet.WebApp.dll.config
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.WebApp\bin\PruebaDesarrolladorNet.WebApp.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.WebApp\bin\PruebaDesarrolladorNet.WebApp.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.WebApp\obj\Debug\PruebaDesarrolladorNet.WebApp.csproj.CoreCompileInputs.cache
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.WebApp\obj\Debug\PruebaDesarrolladorNet.WebApp.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.WebApp\obj\Debug\PruebaDesarrolladorNet.WebApp.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.WebApp\obj\Debug\PruebaDesarrolladorNet.WebApp.csprojAssemblyReference.cache

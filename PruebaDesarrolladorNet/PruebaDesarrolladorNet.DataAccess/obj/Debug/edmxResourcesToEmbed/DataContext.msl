@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="PruebaTecnicaNetModelStoreContainer" CdmEntityContainer="WeatherEntities">
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="PruebaTecnicaNetModel.Countries">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="country_id" ColumnName="country_id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="active" ColumnName="active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="PruebaTecnicaNetModel.States">
+        <MappingFragment StoreEntitySet="States">
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="active" ColumnName="active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Towns">
+      <EntityTypeMapping TypeName="PruebaTecnicaNetModel.Towns">
+        <MappingFragment StoreEntitySet="Towns">
+          <ScalarProperty Name="town_id" ColumnName="town_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="active" ColumnName="active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="PruebaTecnicaNetModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="last_login_date" ColumnName="last_login_date" />
+          <ScalarProperty Name="token" ColumnName="token" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WeatherReports">
+      <EntityTypeMapping TypeName="PruebaTecnicaNetModel.WeatherReports">
+        <MappingFragment StoreEntitySet="WeatherReports">
+          <ScalarProperty Name="reports_id" ColumnName="reports_id" />
+          <ScalarProperty Name="temperature" ColumnName="temperature" />
+          <ScalarProperty Name="precipitation" ColumnName="precipitation" />
+          <ScalarProperty Name="humidity" ColumnName="humidity" />
+          <ScalarProperty Name="conditions" ColumnName="conditions" />
+          <ScalarProperty Name="report_date" ColumnName="report_date" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="active" ColumnName="active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_States_Country_Id" TypeName="PruebaTecnicaNetModel.FK_States_Country_Id" StoreEntitySet="States">
+      <EndProperty Name="Countries">
+        <ScalarProperty Name="country_id" ColumnName="country_id" />
+      </EndProperty>
+      <EndProperty Name="States">
+        <ScalarProperty Name="state_id" ColumnName="state_id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="country_id" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Towns_State_Id" TypeName="PruebaTecnicaNetModel.FK_Towns_State_Id" StoreEntitySet="Towns">
+      <EndProperty Name="States">
+        <ScalarProperty Name="state_id" ColumnName="state_id" />
+      </EndProperty>
+      <EndProperty Name="Towns">
+        <ScalarProperty Name="town_id" ColumnName="town_id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="state_id" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_WeatherReports_Towns_ID" TypeName="PruebaTecnicaNetModel.FK_WeatherReports_Towns_ID" StoreEntitySet="WeatherReports">
+      <EndProperty Name="Towns">
+        <ScalarProperty Name="town_id" ColumnName="town_id" />
+      </EndProperty>
+      <EndProperty Name="WeatherReports">
+        <ScalarProperty Name="reports_id" ColumnName="reports_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_WeatherReports_User_Id" TypeName="PruebaTecnicaNetModel.FK_WeatherReports_User_Id" StoreEntitySet="WeatherReports">
+      <EndProperty Name="Users">
+        <ScalarProperty Name="user_id" ColumnName="user_id" />
+      </EndProperty>
+      <EndProperty Name="WeatherReports">
+        <ScalarProperty Name="reports_id" ColumnName="reports_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

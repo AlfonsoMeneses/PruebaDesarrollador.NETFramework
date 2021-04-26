@@ -1,0 +1,14 @@
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\bin\PruebaDesarrolladorNet.App.dll.config
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\bin\PruebaDesarrolladorNet.App.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\bin\PruebaDesarrolladorNet.App.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\obj\Debug\PruebaDesarrolladorNet.App.csprojAssemblyReference.cache
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\obj\Debug\PruebaDesarrolladorNet.App.csproj.CoreCompileInputs.cache
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\obj\Debug\PruebaDesarrolladorNet.App.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\obj\Debug\PruebaDesarrolladorNet.App.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\bin\PruebaDesarrolladorNet.Business.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\bin\PruebaDesarrolladorNet.DataAccess.dll
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\bin\PruebaDesarrolladorNet.Business.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\bin\PruebaDesarrolladorNet.DataAccess.pdb
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\bin\PruebaDesarrolladorNet.DataAccess.dll.config
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\obj\Debug\PruebaDesarrolladorNet.App.csproj.CopyComplete
+D:\Alfonso\Work\TalyCapGlobal\repo\PruebaDesarrolladorNet\PruebaDesarrolladorNet.App\bin\AutoMapper.dll
